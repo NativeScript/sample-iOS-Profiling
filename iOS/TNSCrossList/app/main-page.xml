@@ -1,0 +1,11 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <ListView id="listview" items="{{ appointments }}">
+  	<ListView.itemTemplate>
+  	  <StackLayout orientation="vertical" margin="6 0">
+  	    <Label text="{{ from }}" margin="2 0" background="red" />
+  	    <Label text="{{ text }}" textWrap="true" margin="2 0" background="green" />
+  	    <Label text="{{ 'Room: ' + room }}" margin="2 0" background="blue" />
+  	  </StackLayout>
+  	</ListView.itemTemplate>
+  </ListView>
+</Page>
