@@ -13,19 +13,24 @@ The CPU and GPU samples are taken with the Xcode instruments. Open the Xcode pro
 
 The device used is iPhone 5S with iOS8.1.3
 
-#### TNSScriptList (NativeScript for iOS)
- - Memory: ~13MB and raises to flat at 48MB
- - CPU: 38.4% Foreground, ~28.8% Graphics
- - GPU Driver FPS: ~59
-
 #### TNSNativeList (Objective-C)
  - Memory: ~6.4MB
- - CPU Activity: 31.3% Foreground, ~28.6% Graphics
+ - CPU Activity: 31.3% Foreground, ~27% Graphics
+ - GPU Driver FPS: ~59
+
+#### TNSScriptList (NativeScript for iOS)
+ - Memory: ~13MB and raises to flat at 48MB
+ - CPU: 38% Foreground, ~27% Graphics
  - GPU Driver FPS: ~59
 
 #### TNSCrossList (NativeScript for iOS + Cross Platform Modules)
  - Memory: ~27.5MB
- - CPU Activity: 38.5% Foreground, ~18% Graphics
+ - CPU Activity: 39% Foreground, ~17% Graphics
+ - GPU Driver FPS: ~59
+ 
+#### XamarinList (Xamarin application without Xamarin.Forms)
+ - Memory: ~19MB (Instruments > Allocation > Persistent)
+ - CPU Activity: 35.5% Foreground, ~27% Graphics
  - GPU Driver FPS: ~59
  
 #### Summary
