@@ -9,3 +9,10 @@ Elapsed: 4.810989ms
 Elapsed: 4.826009ms
 Elapsed: 4.665971ms
 ```
+
+NativeScript
+```
+Elapsed: 1543ms
+Elapsed: 1530ms
+Elapsed: 1528ms
+```
