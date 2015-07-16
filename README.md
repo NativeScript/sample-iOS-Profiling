@@ -30,3 +30,10 @@ Elapsed: 3152ms
 Elapsed: 3132ms
 Elapsed: 3092ms
 ```
+
+Xamarin
+```
+Elapsed: 57ms
+Elapsed: 54ms
+Elapsed: 51ms
+```
