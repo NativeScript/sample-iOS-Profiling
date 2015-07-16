@@ -10,4 +10,7 @@
    <FileRef
       location = "group:NativeScript/NativeScriptApp/platforms/ios/NativeScriptApp.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Cordova/CordovaApp/platforms/ios/CordovaApp.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -1,0 +1,19 @@
+<script src="cordova.js"></script>
+<script>
+document.addEventListener("deviceready", function() {
+    var startDate = new Date();
+
+    (function callNative(i) {
+        TestFixtures.methodWithXYZ(function(x) {
+            if (i < 1e6) {
+                callNative(++i);
+            } else {
+                var elapsedMilliseconds = (new Date() - startDate);
+                alert('Elapsed: ' + elapsedMilliseconds + 'ms');
+            }
+        }, function(e) {
+            alert(e);
+        }, i, i, i);
+    }(0));
+}, false);
+</script>

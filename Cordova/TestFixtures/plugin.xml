@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="nativescript-TestFixtures"
+    version="0.0.1">
+    <name>TestFixtures</name>
+
+    <js-module src="TestFixtures.js" name="TestFixtures">
+        <clobbers target="TestFixtures" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="TestFixtures">
+                <param name="ios-package" value="TestFixtures"/>
+            </feature>
+        </config-file>
+
+        <header-file src="TestFixtures.h" />
+        <source-file src="TestFixtures.m" />
+    </platform>
+</plugin>

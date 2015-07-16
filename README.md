@@ -16,3 +16,10 @@ Elapsed: 1543ms
 Elapsed: 1530ms
 Elapsed: 1528ms
 ```
+
+Cordova
+```
+Elapsed: 390850ms
+Elapsed: 369700ms
+Elapsed: 372780ms
+```
