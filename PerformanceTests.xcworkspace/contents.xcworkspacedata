@@ -13,4 +13,7 @@
    <FileRef
       location = "group:Cordova/CordovaApp/platforms/ios/CordovaApp.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ReactNative/ReactNativeApp/ReactNativeApp.xcodeproj">
+   </FileRef>
 </Workspace>

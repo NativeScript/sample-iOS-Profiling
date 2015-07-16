@@ -23,3 +23,10 @@ Elapsed: 390850ms
 Elapsed: 369700ms
 Elapsed: 372780ms
 ```
+
+ReactNative
+```
+Elapsed: 3152ms
+Elapsed: 3132ms
+Elapsed: 3092ms
+```
