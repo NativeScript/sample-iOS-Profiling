@@ -37,3 +37,10 @@ Elapsed: 57ms
 Elapsed: 54ms
 Elapsed: 51ms
 ```
+
+Appcelerator:
+```
+Elapsed: 34444ms
+Elapsed: 33969ms
+Elapsed: 35916ms
+```

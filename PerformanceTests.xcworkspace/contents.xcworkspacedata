@@ -16,4 +16,7 @@
    <FileRef
       location = "group:ReactNative/ReactNativeApp/ReactNativeApp.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Appcelerator/AppceleratorApp/build/iphone/AppceleratorApp.xcodeproj">
+   </FileRef>
 </Workspace>
