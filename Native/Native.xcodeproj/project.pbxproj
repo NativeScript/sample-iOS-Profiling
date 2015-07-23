@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD478CC41B579F5B0072EC23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD478CC31B579F5B0072EC23 /* main.m */; };
+		CD478CC41B579F5B0072EC23 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD478CC31B579F5B0072EC23 /* main.mm */; };
 		CD71DF1A1B57A3FB0034FE72 /* libTestFixtures.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD71DF191B57A3FB0034FE72 /* libTestFixtures.a */; };
+		CDA570481B5922A6009C7DEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA570471B5922A6009C7DEC /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD478CBF1B579F5B0072EC23 /* Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD478CC31B579F5B0072EC23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD478CC31B579F5B0072EC23 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		CD478CD31B579F5B0072EC23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD71DF191B57A3FB0034FE72 /* libTestFixtures.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFixtures.a; path = "../TestFixtures/build/Debug-iphoneos/libTestFixtures.a"; sourceTree = "<group>"; };
+		CDA570471B5922A6009C7DEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA570481B5922A6009C7DEC /* UIKit.framework in Frameworks */,
 				CD71DF1A1B57A3FB0034FE72 /* libTestFixtures.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +36,7 @@
 		CD478CB61B579F5B0072EC23 = {
 			isa = PBXGroup;
 			children = (
+				CDA570471B5922A6009C7DEC /* UIKit.framework */,
 				CD71DF191B57A3FB0034FE72 /* libTestFixtures.a */,
 				CD478CC11B579F5B0072EC23 /* Native */,
 				CD478CC01B579F5B0072EC23 /* Products */,
@@ -59,7 +63,7 @@
 		CD478CC21B579F5B0072EC23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD478CC31B579F5B0072EC23 /* main.m */,
+				CD478CC31B579F5B0072EC23 /* main.mm */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD478CC41B579F5B0072EC23 /* main.m in Sources */,
+				CD478CC41B579F5B0072EC23 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

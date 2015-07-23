@@ -1,19 +1,52 @@
 <script src="cordova.js"></script>
 <script>
 document.addEventListener("deviceready", function() {
-    var startDate = new Date();
+    function measure(name, action) {
+        var startDate = new Date();
 
-    (function callNative(i) {
-        TestFixtures.methodWithXYZ(function(x) {
-            if (i < 1e6) {
-                callNative(++i);
-            } else {
-                var elapsedMilliseconds = (new Date() - startDate);
-                alert('Elapsed: ' + elapsedMilliseconds + 'ms');
-            }
-        }, function(e) {
+        return action().then(function() {
+            var elapsedMilliseconds = new Date() - startDate;
+            alert(name + ': ' + elapsedMilliseconds + 'ms');
+        }).catch(function(e) {
             alert(e);
-        }, i, i, i);
-    }(0));
+        });
+    }
+
+    measure("Primitives", function() {
+        var promises = [];
+
+        for (var i = 0; i < 50000; i++) {
+            promises.push(new Promise(function(resolve, reject) {
+                TestFixtures.methodWithXYZ(function(x) {
+                    resolve(x);
+                }, function(e) {
+                    reject();
+                }, i, i, i);
+            }));
+        }
+
+        return Promise.all(promises);
+    });
+
+    measure("Big data", function() {
+        var promises = [];
+
+        var array = [];
+        for (var i = 0; i < (1 << 16); i++) {
+            array.push(i);
+        }
+
+        for (var i = 0; i < 200; i++) {
+            promises.push(new Promise(function(resolve, reject) {
+                TestFixtures.methodWithBigData(function() {
+                    resolve();
+                }, function(e) {
+                    reject();
+                }, array);
+            }));
+        }
+
+        return Promise.all(promises);
+    });
 }, false);
 </script>
