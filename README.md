@@ -10,6 +10,19 @@ Requires: iOS 8+ device
 # Results
 
 ## iPhone 5s
+### Startup time
+
+Blank app with single button
+
+| Platform     | Run 1      | Run 2      | Run 3      |
+| ------------ | ---------: | ---------: | ---------: |
+| Native       | 78ms       | 75ms       | 75ms       |
+| Appcelerator | 120ms      | 118ms      | 115ms      |
+| React Native | 280ms      | 275ms      | 261ms      |
+| Xamarin      | 319ms      | 315ms      | 318ms      |
+| Cordova      | 412ms      | 405ms      | 406ms      |
+| NativeScript | 420ms      | 416ms      | 408ms      |
+
 ### Primitives
 | Platform     | Run 1      | Run 2      | Run 3      |
 | ------------ | ---------: | ---------: | ---------: |
