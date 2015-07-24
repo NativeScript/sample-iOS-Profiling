@@ -14,6 +14,20 @@ measure("Primitives", function () {
     }
 });
 
+measure("Strings", function () {
+    var instance = TestFixtures.alloc().init();
+
+    var strings = [];
+
+    for (var i = 0; i < 100; i++) {
+        strings.push("abcdefghijklmnopqrstuvwxyz" + i);
+    }
+
+    for (var i = 0; i < 100000; i++) {
+        instance.methodWithString(strings[i % strings.length]);
+    }
+});
+
 measure("Big data marshalling", function () {
     var instance = TestFixtures.alloc().init();
     var array = [];

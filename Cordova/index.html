@@ -28,6 +28,26 @@ document.addEventListener("deviceready", function() {
         return Promise.all(promises);
     });
 
+    measure("Strings", function() {
+        var strings = [];
+        for (var i = 0; i < 100; i++) {
+            strings.push("abcdefghijklmnopqrstuvwxyz" + i);
+        }
+
+        var promises = [];
+        for (var i = 0; i < 100000; i++) {
+            promises.push(new Promise(function(resolve, reject) {
+                TestFixtures.methodWithString(function(x) {
+                    resolve(x);
+                }, function(e) {
+                    reject();
+                }, strings[i % strings.length]);
+            }));
+        }
+
+        return Promise.all(promises);
+    });
+
     measure("Big data", function() {
         var promises = [];
 

@@ -6,5 +6,8 @@ module.exports = {
     },
     methodWithBigData: function(successCallback, errorCallback, array) {
         exec(successCallback, errorCallback, "TestFixtures", "methodWithBigData", [array]);
+    },
+    methodWithString: function(successCallback, errorCallback, string) {
+        exec(successCallback, errorCallback, "TestFixtures", "methodWithString", [string]);
     }
 };

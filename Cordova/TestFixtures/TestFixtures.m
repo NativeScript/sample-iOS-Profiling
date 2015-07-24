@@ -13,6 +13,13 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
+- (void)methodWithString:(CDVInvokedUrlCommand*)command {
+    NSString* string = command.arguments[0];
+
+    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:string];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 - (void)methodWithBigData:(CDVInvokedUrlCommand*)command {
     NSArray* array = command.arguments[0];
     uint8_t *bytes = malloc(sizeof(*bytes) * array.count);

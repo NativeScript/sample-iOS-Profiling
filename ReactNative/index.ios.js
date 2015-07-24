@@ -44,6 +44,29 @@
         return Promise.all(promises);
     });
 
+    measure("Strings", function() {
+        var strings = [];
+        for (var i = 0; i < 100; i++) {
+            strings.push("abcdefghijklmnopqrstuvwxyz" + i);
+        }
+
+        var promises = [];
+        for (var i = 0; i < 100000; i++) {
+            promises.push(new Promise(function(resolve, reject) {
+                TestFixtures.methodWithString(strings[i % strings.length], function(e, result) {
+                    if (e) {
+                        reject(e);
+                        return;
+                    }
+
+                    resolve(result);
+                });
+            }));
+        }
+
+        return Promise.all(promises);
+    });
+
     measure("Big data marshalling", function() {
         var promises = [];
 

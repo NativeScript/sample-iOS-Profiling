@@ -33,6 +33,16 @@ Blank app with single button
 | Cordova      | 351420ms   | 357940ms   | 356740ms   |
 | React Native | 625720ms   | 509040ms   | 487560ms   |
 
+### Strings
+| Platform     | Run 1      | Run 2      | Run 3      |
+| ------------ | ---------: | ---------: | ---------: |
+| Native       | 42ms       | 42ms       | 42ms       |
+| NativeScript | 722ms      | 704ms      | 680ms      |
+| Xamarin      | 853ms      | 848ms      | 804ms      |
+| Appcelerator | 3215ms     | 3198ms     | 3180ms     |
+| Cordova      | 36864ms    | 36063ms    | 35861ms    |
+| React Native | 63268ms    | 56110ms    | 55450ms    |
+
 ### Big data
 | Platform     | Run 1      | Run 2      | Run 3      |
 | ------------ | ---------: | ---------: | ---------: |

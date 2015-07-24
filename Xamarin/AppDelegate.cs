@@ -17,14 +17,31 @@ namespace XamarinApp
 
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-           Measure("Primitives", () =>
-           {
-               var instance = new TestFixtures.TestFixtures();
-               for (int i = 0; i < 1e6; i++)
-               {
-                   instance.MethodWithX(i, i, i);
-               }
-           });
+            Measure("Primitives", () =>
+            {
+                var instance = new TestFixtures.TestFixtures();
+                for (int i = 0; i < 1e6; i++)
+                {
+                    instance.MethodWithX(i, i, i);
+                }
+            });
+
+            Measure("Strings", () =>
+            {
+                var instance = new TestFixtures.TestFixtures();
+
+                var strings = new string[100];
+
+                for (int i = 0; i < 100; i++)
+                {
+                    strings[i] = "abcdefghijklmnopqrstuvwxyz" + i;
+                }
+
+                for (int i = 0; i < 100000; i++)
+                {
+                    instance.MethodWithString(strings[i % strings.Length]);
+                }
+            });
 
             Measure("Big data", () =>
             {

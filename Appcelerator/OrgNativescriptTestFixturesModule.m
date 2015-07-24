@@ -21,6 +21,11 @@
 	return @(result);
 }
 
+-(id)methodWithString:(id)args {
+    NSString* string = args[0];
+    return string;
+}
+
 - (id)methodWithBigData:(id)args {
     NSArray* array = args[0];
     uint8_t *bytes = malloc(sizeof(*bytes) * array.count);

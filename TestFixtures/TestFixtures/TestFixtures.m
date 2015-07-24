@@ -5,6 +5,10 @@
     return x + y + z;
 }
 
+- (NSString*)methodWithString:(NSString*)aString {
+    return aString;
+}
+
 - (UIImage *)methodWithBigData:(NSArray *)array {
     uint8_t *bytes = malloc(sizeof(*bytes) * array.count);
 

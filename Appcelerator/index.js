@@ -15,6 +15,17 @@ measure("Primitives", function () {
     }
 });
 
+measure("Strings", function () {
+    var strings = [];
+    for (var i = 0; i < 100; i++) {
+        strings.push("abcdefghijklmnopqrstuvwxyz" + i);
+    }
+
+    for (var i = 0; i < 100000; i++) {
+        TestFixtures.methodWithString(strings[i % strings.length]);
+    }
+});
+
 measure("Big data", function () {
     var array = [];
 

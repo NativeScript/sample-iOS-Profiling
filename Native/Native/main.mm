@@ -20,12 +20,26 @@ int main() {
             }
         });
 
+        measure(@"Strings", [] {
+            id instance = [[TestFixtures alloc] init];
+
+            NSMutableArray* strings = [NSMutableArray array];
+
+            for (int32_t i = 0; i < 100; i++) {
+                [strings addObject:[NSString stringWithFormat:@"abcdefghijklmnopqrstuvwxyz%d", i]];
+            }
+
+            for (int32_t i = 0; i < 100000; i++) {
+                [instance methodWithString:strings[i % strings.count]];
+            }
+        });
+
         measure(@"Big data marshalling", [] {
             @autoreleasepool {
                 id instance = [[TestFixtures alloc] init];
                 NSMutableArray* array = [NSMutableArray array];
 
-                for (NSInteger i = 0; i < (1 << 16); i++) {
+                for (int32_t i = 0; i < (1 << 16); i++) {
                     [array addObject:@(i)];
                 }
 

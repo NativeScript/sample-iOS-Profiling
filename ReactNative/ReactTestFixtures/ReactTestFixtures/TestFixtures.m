@@ -12,6 +12,10 @@ RCT_EXPORT_METHOD(methodWithX:(NSInteger)x Y:(NSInteger)y Z:(NSInteger)z callbac
     callback(@[[NSNull null], @(result)]);
 }
 
+RCT_EXPORT_METHOD(methodWithString:(NSString*)string callback:(RCTResponseSenderBlock)callback) {
+    callback(@[[NSNull null], string]);
+}
+
 RCT_EXPORT_METHOD(methodWithBigData:(NSArray *)array callback:(RCTResponseSenderBlock)callback) {
     uint8_t *bytes = malloc(sizeof(*bytes) * array.count);
 
