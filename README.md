@@ -23,7 +23,11 @@ Blank app with single button
 | Cordova      | 412ms      | 405ms      | 406ms      |
 | NativeScript | 420ms      | 416ms      | 408ms      |
 
+* NativeScript - We have an overhead from the JS modules. Some improvements are coming - minification, concatenation of the JS modules.
+
 ### Primitives
+The tests below show the marshaling of numbers between JavaScript and native. It is for 1 000 000 calls to native code.
+
 | Platform     | Run 1      | Run 2      | Run 3      |
 | ------------ | ---------: | ---------: | ---------: |
 | Native       | 5ms        | 4ms        | 4ms        |
