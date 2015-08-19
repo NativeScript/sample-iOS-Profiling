@@ -23,7 +23,7 @@ The device used is iPhone 5S with iOS8.1.3
  - CPU: 38% Foreground, ~27% Graphics
  - GPU Driver FPS: ~59
 
-#### NativeScript with moddules (NativeScript for iOS + Cross Platform Modules)
+#### NativeScript with modules (NativeScript for iOS + Cross Platform Modules)
  - Memory: ~27.5MB
  - CPU Activity: 39% Foreground, ~17% Graphics
  - GPU Driver FPS: ~59
