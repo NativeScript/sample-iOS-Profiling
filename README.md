@@ -38,6 +38,8 @@ The tests below show the marshaling of numbers between JavaScript and native. It
 | React Native | 625720ms   | 509040ms   | 487560ms   |
 
 ### Strings
+The tests below show the marshaling of strings between JavaScript and native. It is for 100 000 calls to native code.
+
 | Platform     | Run 1      | Run 2      | Run 3      |
 | ------------ | ---------: | ---------: | ---------: |
 | Native       | 42ms       | 42ms       | 42ms       |
@@ -48,6 +50,8 @@ The tests below show the marshaling of numbers between JavaScript and native. It
 | React Native | 63268ms    | 56110ms    | 55450ms    |
 
 ### Big data
+The tests below show the marshaling of an array with 65 536 elements between JavaScript and native. It is for 200 calls to native code.
+
 | Platform     | Run 1      | Run 2      | Run 3      |
 | ------------ | ---------: | ---------: | ---------: |
 | Native       | 768ms      | 774ms      | 759ms      |
