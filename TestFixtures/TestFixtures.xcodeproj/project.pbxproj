@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD71DEFE1B57A1E70034FE72 /* TestFixtures.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD71DEFD1B57A1E70034FE72 /* TestFixtures.h */; };
 		CD71DF001B57A1E70034FE72 /* TestFixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = CD71DEFF1B57A1E70034FE72 /* TestFixtures.m */; };
+		CD867B851BF494AA001EFC95 /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD71DF261B57B4E60034FE72 /* module.modulemap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +19,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				CD867B851BF494AA001EFC95 /* module.modulemap in CopyFiles */,
 				CD71DEFE1B57A1E70034FE72 /* TestFixtures.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
