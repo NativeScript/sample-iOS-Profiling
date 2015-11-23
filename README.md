@@ -12,7 +12,7 @@ Requires: iOS 8+ device
 ## iPhone 5s
 
 ### Startup time
-Blank app with single button
+Blank app with single button. Times are gathered from Instruments.
 
 | Platform     | Run 1      | Run 2      | Run 3      |
 | ------------ | ---------: | ---------: | ---------: |
