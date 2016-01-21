@@ -12,16 +12,14 @@ Requires: iOS 8+ device
 ## iPhone 5s
 
 ### Startup time
-Blank app with single button. Times are gathered from Instruments.
+Blank app with single button.
 
 | Platform     | Run 1      | Run 2      | Run 3      |
 | ------------ | ---------: | ---------: | ---------: |
-| Native       | 78ms       | 75ms       | 75ms       |
-| Appcelerator | 120ms      | 118ms      | 115ms      |
-| React Native | 280ms      | 275ms      | 261ms      |
-| Xamarin      | 319ms      | 315ms      | 318ms      |
-| Cordova      | 412ms      | 405ms      | 406ms      |
-| NativeScript | 559ms      | 570ms      | 568ms      |
+| Native       | 111ms      | 105ms      | 108ms      |
+| React Native | 358ms      | 361ms      | 353ms      |
+| Cordova      | 613ms      | 612ms      | 609ms      |
+| NativeScript | 674ms      | 672ms      | 670ms      |
 
 * NativeScript - We have an overhead from the JS modules. Some improvements are coming - minification, concatenation of the JS modules.
 
