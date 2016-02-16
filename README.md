@@ -11,7 +11,7 @@ Requires: iOS 8+ device
 
 ## iPhone 5s
 
-### Startup time
+### Startup Time
 Blank app with single button.
 
 | Platform     | Run 1      | Run 2      | Run 3      |
@@ -48,7 +48,7 @@ The tests below show the marshaling of strings between JavaScript and native. It
 | React Native | 12358ms    | 12464ms    | 12547ms    |
 | Cordova      | 36864ms    | 36063ms    | 35861ms    |
 
-### Big data
+### Big Data
 The tests below show the marshaling of an array with 65 536 elements between JavaScript and native. It is for 200 calls to native code.
 
 | Platform     | Run 1      | Run 2      | Run 3      |
