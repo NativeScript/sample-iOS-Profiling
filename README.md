@@ -48,7 +48,7 @@ The tests below show the marshaling of strings between JavaScript and native. It
 | ------------ | ---------: | ---------: | ---------: |
 | Native       | 42ms       | 42ms       | 42ms       |
 | Xamarin      | 248ms      | 234ms      | 244ms      |
-| **NativeScript | **415ms**      | **444ms**      | **418ms**      |
+| **NativeScript** | **415ms**      | **444ms**      | **418ms**      |
 | Appcelerator | 3215ms     | 3198ms     | 3180ms     |
 | React Native | 12358ms    | 12464ms    | 12547ms    |
 | Cordova      | 36864ms    | 36063ms    | 35861ms    |
