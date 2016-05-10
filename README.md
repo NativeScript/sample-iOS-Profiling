@@ -1,3 +1,8 @@
+The tables below show the results of running the performance tests for the most popular cross-platform frameworks out there on real iOS device.
+You can find the source code of the test case scenarios in this repo. Please open issues if you have any questions.
+
+*Last update: March.2016*
+
 Requires: iOS 8+ device
 
 * [Native](https://developer.apple.com/xcode/) - Xcode 6.3.2
@@ -11,7 +16,7 @@ Requires: iOS 8+ device
 
 ## iPhone 5s
 
-### Startup Time
+### Startup Time - [code](https://github.com/NativeScript/sample-iOS-Profiling/blob/performance-tests/NativeScript/bootstrap.js#L1)
 Blank app with a single button.
 
 | Platform     | Run 1      | Run 2      | Run 3      |
@@ -24,7 +29,7 @@ Blank app with a single button.
 
 * NativeScript - We have an overhead from the JS modules. Some improvements are coming - minification, concatenation of the JS modules.
 
-### Primitives
+### Primitives - [code](https://github.com/NativeScript/sample-iOS-Profiling/blob/performance-tests/NativeScript/bootstrap.js#L10)
 The tests below show the marshaling of numbers between JavaScript and native. It is for 1 000 000 calls to native code.
 
 | Platform     | Run 1      | Run 2      | Run 3      |
@@ -36,7 +41,7 @@ The tests below show the marshaling of numbers between JavaScript and native. It
 | React Native | 130600ms   | 125140ms   | 127220ms   |
 | Cordova      | 351420ms   | 357940ms   | 356740ms   |
 
-### Strings
+### Strings - [code](https://github.com/NativeScript/sample-iOS-Profiling/blob/performance-tests/NativeScript/bootstrap.js#L17)
 The tests below show the marshaling of strings between JavaScript and native. It is for 100 000 calls to native code.
 
 | Platform     | Run 1      | Run 2      | Run 3      |
@@ -48,7 +53,7 @@ The tests below show the marshaling of strings between JavaScript and native. It
 | React Native | 12358ms    | 12464ms    | 12547ms    |
 | Cordova      | 36864ms    | 36063ms    | 35861ms    |
 
-### Big Data
+### Big Data - [code](https://github.com/NativeScript/sample-iOS-Profiling/blob/performance-tests/NativeScript/bootstrap.js#L31)
 The tests below show the marshaling of an array with 65 536 elements between JavaScript and native. It is for 200 calls to native code.
 
 | Platform     | Run 1      | Run 2      | Run 3      |
